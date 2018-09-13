@@ -81,21 +81,22 @@ var Enemy3 = new Enemy('images/enemy-bug.png', 'Fastest', 'x', 'y', 'speed');
 
 // Place all enemy objects in an array called allEnemies
 // Place all enemy objects in an array called allEnemies
-let allEnemies = [
-  {Enemy: ["Enemy1", "Enemy2", "Enemy3"]} //I'm starting with 3 Enemies but can add more later if needed
-  ];
+const allEnemies = [];
+allEnemies.push(Enemy1, Enemy2, Enemy3); //I'm starting with 3 Enemies but can add more later if needed
+
 
 // Place the player object in a variable called player
 // Now instantiate your Player objects.
-var player1 = new Player('images/char-antenna-boy.png', 'Antenna Boy', 'male', 'x', 'y');
-var player2 = new Player('images/char-cat-girl.png', 'Cat Girl', 'female', 'x', 'y');
-var player3 = new Player('images/char-horn-girl.png', 'Horn Girl', 'female', 'x', 'y');
-var player4 = new Player('images/char-pink-girl.png', 'Pink Girl', 'female', 'x', 'y');
-var player5 = new Player('images/char-princess-girl.png', 'Princess Girl', 'female', 'x', 'y');
+var player1 = new Player('images/char-antenna-boy.png', 'Antenna Boy', 'x', 'y');
+var player2 = new Player('images/char-cat-girl.png', 'Cat Girl', 'x', 'y');
+var player3 = new Player('images/char-horn-girl.png', 'Horn Girl', 'x', 'y');
+var player4 = new Player('images/char-pink-girl.png', 'Pink Girl', 'x', 'y');
+var player5 = new Player('images/char-princess-girl.png', 'Princess Girl', 'x', 'y');
 
 
 // Place all player obhects in an array called allPlayers
-let allPlayers = [{Player: ['Player1', 'Player2', 'Player3']}];
+const allPlayers = [];
+allPlayers.push(player1, player2, player3, player4, player5);
 
 
 // This listens for key presses and sends the keys to your
