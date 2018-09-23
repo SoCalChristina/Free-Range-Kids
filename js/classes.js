@@ -79,11 +79,8 @@ class Entity {
       this.obstacles = [];
     }
 
-/*
-// Update the enemy's position, required method for game
-// Parameter: dt, a time delta between ticks
-*/
 
+// Update the enemy's position using dt
   update(dt) {
 // Check is the enemy is off the right side of the board
     if (this.x > 5) {
@@ -96,33 +93,28 @@ class Entity {
   }
 
 // Set a random speed for enemy object
-
   changePace(max) {
     this.pace = 0.5 + Math.random() * max; // Change its pace
   }
 
 // Set different pace when enemy loops back to 0 x-axis
-
   reset() {
     this.changePace(3.0);
     this.x = -(Math.floor(1 + Math.random() * 5)); // Reset on other side
   }
 
-
 // set function to change enemy proprerties
-
   addObstacles(obstacles) {
     this.obstacles = obstacles;
   }
 
 // Set random number of active enemy objects
-
   levelUp() {
     this.level++; // add enemies with each level
 
 // Use value of random function to push additoinal enemies into play
 
-    if (this.level % 2 === 0 && Math.floor(Math.random() * 5) === 3) {
+   if (this.level % 2 === 0 && Math.floor(Math.random() * 5) === 3) {
       // Creates another enemy on the same line
       this.obstacles.push(new Enemy(-(Math.floor(1 + Math.random() * 5)), this.y / 1.15));
     }
@@ -130,7 +122,6 @@ class Entity {
 }
 
 // Create class for player objtect and properties
-
   class Player extends Entity {
     constructor() {
       super(); // Call super class constructor
@@ -140,8 +131,8 @@ class Entity {
       this.moving = false; // Tracking movement in progress
       this.win = false; // Tracks win situation
       this.lives = 3; // Number of lives
-      this.award = 5; // Set number of awards
-      this.heart = 'images/heart.png';
+      this.award = 5; // this will be used for future achievement section
+      this.heart = 'images/heart.png'; // number of heart images will correspond to number of lives
     }
 
 // Update player's position
@@ -154,14 +145,12 @@ class Entity {
       }
 
 //  Draw the player on screen
-
     render() {
       super.render(); // Super class render method
       this.moving = false; // Ack that the move rendered
     }
 
  //Controls user input to move player
-
     handleInput(input) {
       // Handle different direction inputs
       switch (input) {
@@ -184,7 +173,6 @@ class Entity {
     }
 
 // Reset the player to start position
-
     reset() {
       this.x = 2; // Start x-axis position
       this.y = 5 * 1.15; // Start y-axis position
@@ -193,45 +181,40 @@ class Entity {
 
 
   // Checks the players position to see if they win
-
     checkVictory() {
       this.y === 0 ? player.victory() : ''; // If at water(top of the board) victory, otherwise, nothing
-    }
+    
 
 
 // Events when player hits the water on the board
-
     victory() {
       this.win = true; // boolean set
     }
 
 // Removes player lives and updates the life meter
-
     loseLife() {
       // Only decrement when greater than zero
       if (this.lives > 0) {
         this.lives--; // decrement lives
         const lives = document.querySelectorAll('.lifebar img');
-        lives[this.lives].classList.toggle('hide'); // Remove one life on screen
+        lives[this.lives].classList.toggle('hide'); // change class to remove one life on screen
       }
     }
 
 
 //Checks there are no more lives left
-
     livesEmpty() {
       return this.lives === 0 ? true : false;
     }
 
 
-  // Handles message and player life reset
-
+  // modal message input and player life reset
     gameOver() {
       this.lives = 0; // Reset life count
       const lives = document.querySelectorAll('.lifebar img'); // Grab the life meter
 
       lives.forEach((life) => {
-        life.classList.remove('hide'); // Show all life icons
+        life.classList.remove('hide'); // refresh all life icons
       });
     }
   }
