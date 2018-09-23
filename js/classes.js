@@ -140,7 +140,7 @@ class Entity {
     update() {
         // player stopped moving and is at a game level ending event
         if (!this.moving && !this.win) {
-          this.checkVictory(); // Check if in winning position
+          this.checkSurvival(); // Check if in winning position
         }
       }
 
@@ -176,18 +176,18 @@ class Entity {
     reset() {
       this.x = 2; // Start x-axis position
       this.y = 5 * 1.15; // Start y-axis position
-      this.win = false; // Reset victory tracker
+      this.win = false; // Reset Survival data
     }
 
 
   // Checks the players position to see if they win
-    checkVictory() {
-      this.y === 0 ? player.victory() : ''; // If at water(top of the board) victory, otherwise, nothing
+    checkSurvival() {
+      this.y === 0 ? player.Survival() : ''; // If at water(top of the board) survival, otherwise, nothing
     
 
 
 // Events when player hits the water on the board
-    victory() {
+    survival() {
       this.win = true; // boolean set
     }
 
