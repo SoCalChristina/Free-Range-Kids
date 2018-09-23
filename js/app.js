@@ -133,5 +133,3 @@ const showModal = () => {
 // Get the modal close button, and when the user clicks on it, execute myFunction
 hideModal()
 gameBtn.onclick = hideModal();
-
-};
