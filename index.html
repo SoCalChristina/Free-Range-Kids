@@ -1,13 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udacity JavaScript Frogger Project</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
+
 <body>
+<!--****** flexbox ******-->
+<div class="main">
+  <!--****** Game stats panel ******-->
+  <div id="panel">
+    <h1 class="title">Free Range Kids</h1>
+      <div class="game-tracker">
+        <div class="level-display">
+          <p>Level:
+            <span class="level">1</span>
+          </p>
+        </div>
+        <div class="lifebar">
+          <img src="images/heart.png" alt="life 1">
+          <img src="images/heart.png" alt="life 2">
+          <img src="images/heart.png" alt="life 3">
+        </div>
+
+<!-- TODO fix the achievement awards images to increment with each level passed  -->
+        <div class="achievement-vault">
+          <img src="images/gem-blue.png" class="hide" alt="blue gem achievement award">
+          <img src="images/gem-green.png" class="hide" alt="green gem achievement award">
+          <img src="images/gem-orange.png" class="hide" alt="yellow gem achievement award">
+          <img src="images/star.png" class="hide" alt="star achievement award">
+          <img src="images/key.png" class="hide" alt="gold key acheivement award">
+        </div>
+      </div>
+    </div>
+<!--<div class="canvas">-->
+
+<div id=gameCanvas></div>
+</div>
+<!--******Footer Section ******-->
+  <div id ="footer">
+    <div id="footer-content">
+      <h3>Rules of the Game</h3> <!--Game instructions -->
+        <p id="game-rules">Use your keyboard to cross the road. You can use your arrows or the preprogrammed letters to move your avatar on the screen. Help you avater move across the path without colliding with an obstacle. Get your avatar to the other side of the path to win the level.<p>
+        <p id="achievements">Win an achievement award if you make it safely. Collect all five achievement awards to complete all game levels.</p>
+        <p id="life-hearts">Be careful or you'll lose a life if collide. Your game is over when you run out of hearts.</p>
+
+      <h3>Player Controls:</h3>
+        <div class="controller-key">
+       <ul class="controls-list"> <!--Controls list -->
+        <li>
+          <span>UP</span>
+          <span class="controls">&#8679;</span>
+        </li>
+        <li>
+          <span>DOWN</span>
+          <span class="controls">&#x21E9;</span>
+        </li>
+        <li>
+          <span>LEFT</span>
+            <span class="controls">&#8678;</span>
+        </li>
+        <li>
+          <span>RIGHT</span>
+          <span class="controls">&#x21E8;</span>
+        </li>
+      </ul>
+    </div>
+    <h3>Player Avatar:</h3> <!--Secetion to hold Avatar imagage and selection -->
+      <p>Coming Soon: Player Avatar selection
+    <!-- TODO add avatar selection feature -->
+  </div>
+</div>
+<!--******* Modal *******-->
+<!-- source for modal https://www.w3schools.com/howto/howto_css_modals.asp  -->
+  <div id="game-modal" class="modal"> <!--The modal (background) -->
+    <div class="modal-content"> <!--The modal Box -->
+      <div class="modal-header">
+        <h2 class="modal-title">Title</h2>
+          <div id="close-game" class="close"><span>&times;</span></div>
+      </div>
+      <div class="modal-body"> <!--div that holds the game messege -->
+        <p class="modal-message"><span class="modal-level"></span></p>
+          <button id="game-button" class="modal-btn"></button>
+      </div>
+    </div>
+  </div>
+
+    <!--***** Script links *****-->
     <script src="js/resources.js"></script>
+    <script src="js/classes.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
 </body>
+
 </html>
