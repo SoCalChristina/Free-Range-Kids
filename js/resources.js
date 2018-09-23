@@ -51,7 +51,7 @@
      }
   }
 
-  // Grabs references to images that are known to be cached. Similar to beginning of load(), no check(efficient).
+  // use the cached images
     function get(url) {
       return resourceCache[url];  //Image source to use as reference
     }
