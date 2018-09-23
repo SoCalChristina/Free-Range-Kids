@@ -1,6 +1,18 @@
 frontend-nanodegree-arcade-game
 ===============================
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+This a a JavaScript frogger clone game made for the Udacity Frontend Nano Degree course. 
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+The game requires a web browser.
+
+The following fonts are used:
+  (https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet)
+  (https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet)
+  
+Rules of the Game
+Use your keyboard to cross the road. You can use your arrows or the preprogrammed letters to move your avatar on the screen. Help you avater move across the path without colliding with an obstacle. Get your avatar to the other side of the path to win the level.
+
+Be careful or you'll lose a life if collide. Your game is over when you run out of hearts.
+
+TODO
+I plan to add achievement awards for successfully passing levels.
