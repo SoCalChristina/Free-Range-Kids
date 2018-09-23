@@ -183,7 +183,7 @@ class Entity {
   // Checks the players position to see if they win
     checkSurvival() {
       this.y === 0 ? player.Survival() : ''; // If at water(top of the board) survival, otherwise, nothing
-    
+    }    
 
 
 // Events when player hits the water on the board
