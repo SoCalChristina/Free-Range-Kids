@@ -14,7 +14,7 @@
  * writing app.js a little simpler to work with.
  */
 
-/starter code Provided by Udacity, https://github.com/udacity/frontend-nanodegree-arcade-game
+//starter code Provided by Udacity, https://github.com/udacity/frontend-nanodegree-arcade-game
  // code sources https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000
 
 const Engine = ((global) => {
