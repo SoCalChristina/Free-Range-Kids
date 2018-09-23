@@ -1,3 +1,4 @@
+
 /* Engine.js
  * This file provides the game loop functionality (update entities and render),
  * draws the initial game board on the screen, and then calls the update and
@@ -9,11 +10,13 @@
  * drawn but that is not the case. What's really happening is the entire "scene"
  * is being drawn over and over, presenting the illusion of animation.
  *
- * This engine makes the canvas' context (ctx) object globally available to make
+ * This engine makes the canvas' context (ctx) object globally available to make 
  * writing app.js a little simpler to work with.
- * Provide by Udacity, https://github.com/udacity/frontend-nanodegree-arcade-game
- * code sources Rodrick Bloomfield, https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000
  */
+
+/starter code Provided by Udacity, https://github.com/udacity/frontend-nanodegree-arcade-game
+ // code sources https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000
+
 const Engine = ((global) => {
   /* Predefine the variables we'll be using within this scope,
    * create the canvas element, grab the 2D context for that canvas
@@ -43,7 +46,7 @@ const Engine = ((global) => {
   // source for resizing:  zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000
  // Sets all dimensions for proper rendering on all devices
   function setDimensions() {
-    /*\ Check out the screen state  ----------*/
+    // check the size of the screen
     const isSmallWindow = window.innerWidth < 500; // Board will overflow on x-axis
     const isShortWindow = window.innerHeight < 600; // Board will overflow on y-axis
     const isLandscape = window.innerHeight < window.innerWidth; // Screen is in landscape mode
@@ -61,7 +64,7 @@ const Engine = ((global) => {
         ? window.innerWidth * 0.95 : 500; // 95% of window width or default
 
 // Set canvas // Id
-
+//code source https://stackoverflow.com/questions/11816431/how-to-add-a-html5-canvas-within-a-div
     canvas.id = "gameCanvas";
     canvas.style.margin = "auto";
 
@@ -70,7 +73,9 @@ const Engine = ((global) => {
     // make sure the score board panel width = canvas width
     var panel = document.getElementById('panel');
     panel.style.width = `${canvas.width}px`; // Set game stats panel size
+
 // make sure game instructions footer width = canvas width
+//code source https://stackoverflow.com/questions/11816431/how-to-add-a-html5-canvas-within-a-div
 var footer = document.getElementById('footer');
 footer.style.width = `${canvas.width}px`; // Set game instructions footer size
 /*******************************************/
