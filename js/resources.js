@@ -72,7 +72,7 @@
     }
 
 // global functions 
-    win.Resources = {
+    window.Resources = {
         load,
         get,
         onReady,
