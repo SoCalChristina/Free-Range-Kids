@@ -6,8 +6,8 @@ This a a JavaScript frogger clone game made for the Udacity Frontend Nano Degree
 The game requires a web browser.
 
 The following fonts are used:
-  (https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet)
-  (https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet)
+  (https://fonts.googleapis.com/css?family=Chicle)
+  (https://fonts.googleapis.com/css?family=Open+Sans)
   
 Rules of the Game
 Use your keyboard to cross the road. You can use your arrows or the preprogrammed letters to move your avatar on the screen. Help you avater move across the path without colliding with an obstacle. Get your avatar to the other side of the path to win the level.
