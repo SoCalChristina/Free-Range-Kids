@@ -1,127 +1,151 @@
-/*************************/
-/*  body content styles    */
-/*************************/
+/******************/
+/* Body Styles  */
+/***************/
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  margin: auto;
   color: #f2f2f2;
   background-color: rgba(135, 206, 235, 0.8);
-  height: 100vm;
-
-}
-
-/*************************/
-/*  main content styles    */
-/*************************/
-.main {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 100vh;
+  /* webkit extensions source https://developer.mozilla.org/en-US/docs/Web/CSS/Webkit_Extensions  */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  margin: auto;
-  padding: 1px 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+  align-items: center;
 }
 
+
+/**********************/
+/* Score Board Panel: /
 /********************/
-/*     Score Board  */
-/*******************/
-#panel {
+.panel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
   display: flex;
   flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
   justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
   align-items: center;
+  position: absolute;
+  margin-top: 1em;
   margin: auto;
-  height: 125px;
+  height: 150px;
 }
 
-#panel h1 {
+.panel h1 {
   text-align: center;
   color: #ffdb4d;
   text-shadow: 0.1em 0.1em black;
   font-family: 'Chicle', cursive;
   font-size: 3.5em;
   letter-spacing: 0.05em;
-  margin: 0 auto;
+  margin: 0.5em auto;
+  width: 100%;
+  margin-bottom: 0;
 }
-
 .game-tracker {
   display: flex;
-  margin: 0.5 1em;
   width: 100%;
+  padding: 0 0.5em;
+  flex-direction: row;
+}
+
+.achievement-vault {
+  display:flex;
+  width: 50%;
 }
 
 .level-display {
+  padding-left:5%;;
+  width: 55%;
+}
+
+.level p {
+  font-size: 1.5em;
+  padding-left: 0.5em;
+}
+
+.lifebar {
   display:flex;
-  width:45%;
-  margin-top: 1;
-  flex-direction: row;
-  align-items: center;
+  width: 45%;
+  height: 60px;
 }
 
 .lifebar {
   display:flex;
   width:45%;
   margin-left: 0.5em;
-}
 
+}
 .lifebar img {
-  width: 32px;
-  height: 35px;
-  margin: 0;
-  padding: 0 0.5em;
+    width: 32px;
+    height: 35px;
+    margin: 0;
+    padding: 0 0.5em;
 }
 
-/********************************************/
-/* TODO fix and add an achievement award bar
-/*******************************************/
-
-.achievement-vault {
-  display:flex;
-  width:45%;
-  margin-left: 0.5em;
+.hide {
+    visibility: hidden;
 }
 
-.achievement-vault img {
-  width: 32px;
-  height: 35px;
-  margin: 0;
-  padding: 0 0.5em;
-  display: none;
-}
-
-/*********************/
-/*  canvas styles   */
-/*********************/
-#gameCanvas {
-  display: flex;
-  margin: auto;
+/*****************/
+/*    Canvas:   */
+/***************/
+canvas {
+  position: absolute;
+  top: 150px;
 }
 
 /**********************/
 /*  Footer Styles     */
 /**********************/
-#footer {
-  position: relative;
+.footer {
+  position: absolute;
   flex-direction: column;
   align-items: center;
-  height: 100px;
   margin:auto;
-  overflow-y: scroll;
+  overflow: auto;
   width: 100%;
-  top: 700px;
+  height: 150px;
 }
 
 .footer-content {
   margin: auto;
   width: 100%;
   align-self: center;
+  margin-top: 0.5em;
 }
 
 h3 {
-  padding: 0 0.5em;
   font-weight: bold;
   text-shadow: 1px 1px black;
   font-size: 1.5em;
+  margin: 0 0.5em;
 }
+
+ #footer p {
+   margin-top: 0;
+ }
 
 .controller-key {
   width: 180px;
@@ -138,146 +162,90 @@ h3 {
 .controls-List {
   word-spacing: .5em;
   line-height: 1.5em;
+  margin: auto;
 }
 
-.character {
+/********************/
+/* Media Queries   */
+/******************/
+@media only screen and (max-width: 500px) {
+    .panel h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .panel h1 {
+        font-size: 2em;
+    }
+}
+
+/****************************/
+/* Game Status Alert Modal */
+/**************************/
+.modal {
+  position: fixed;
+  z-index: 99;
+  width: 300px;
+  height: 150px;
+  top: 250px;
+    -webkit-transition: top 1000ms;
+    -o-transition: top 1000ms;
+    -moz-transition: top 1000ms;
+    transition: top 1000ms;
+}
+
+.out {
+  top: -220px;
+    -webkit-transition: top 1000ms;
+    -o-transition: top 1000ms;
+    -moz-transition: top 1000ms;
+  transition: top 1000ms;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  text-align: center;
+}
+
+.modal-header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(135, 206, 235, 0.8);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
   justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
   align-items: center;
 }
 
-.current-char {
-  width: 80px;
-  height: 90px;
-  border: 1px solid #686868;
-  border-radius: 50%;
+.modal-btn-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.5em;
 }
 
-.char-selector {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
+.modal-btn-cont {
+  background-color:#ffdd1a;
+  border: 1px solid black;
+  padding: 0.5em;
 }
 
-.char-selector li {
-  list-style: none;
-}
-
-.char-selector img:hover {
-  background-color: #ffdb4d;
-}
-
-.char-selector img {
-  width: 50px;
-}
-
-/*****************************/
-/*      Modal Styles         */
-/****************************/
-/*The modal background */
-#game-modal {
-  /*display: hidden;/* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 99; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* modal-content box */
-.modal-content {
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%; /* Could be more or less, depending on screen size */
-}
-
-modal-header {
-  width: 100%;
-  height: 75px;
-  background-color: rgba(135, 206, 235, 0.8);
-}
-
-#close-game {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-#close-game:hover,
-#close-game:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* div that holds game message */
 .modal-body {
-  background-color: rgba(255, 255, 255, 0.8);
   color: black;
   padding-top: 20px;
+  background-color: rgba(255,255,255, 0.9);
   text-align: center;
-}
-
-#game-button {
-  padding: .5em;
-  font-size: 1em;
-  background-color: #ffdb4d;
-  border-radius: 8px;
-  border: 0.5em solid #fff;
-}
-
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
-/******************************/
-/*    Animation Key Frame:    */
-/******************************/
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/*******************************/
-/*        Media Queries:       */
-/*******************************/
-
-@media screen and (max-width: 800px) {
-    div.content {margin-left: 0;}
-}
-
-.controls-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2px;
-  padding: 0 35%;
-}
-
-.controls {
-  margin: auto;
-  text-align: center;
-  word-spacing: .5em;
-  line-height: 1.5em;
-  }
 }
