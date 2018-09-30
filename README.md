@@ -2,17 +2,41 @@ Frontend Nano Degree Arcade Game
 ===============================
 
 This a a JavaScript frogger clone game made for the Udacity Frontend Nano Degree course. 
+My inspiration for my version, ###Free Range Kids, comes from current event stories about "concerned" bystanders calling authorities to report elementary school age children playing outside without their parents. 
 
+Game Requirements
+=================
 The game requires a web browser.
 
-The following fonts are used:
+Resources
+=========
+The game utilizes the following fonts:
   (https://fonts.googleapis.com/css?family=Chicle)
   (https://fonts.googleapis.com/css?family=Open+Sans)
   
 Rules of the Game
-Use your keyboard to cross the road. You can use your arrows or the preprogrammed letters to move your avatar on the screen. Help you avater move across the path without colliding with an obstacle. Get your avatar to the other side of the path to win the level.
+=================
+Use your keyboard to cross the road. You can use your arrows to move your avatar on the screen. Help you avatar move across the path without colliding with an obstacle. Get your avatar to the other side of the path to win the level.
 
-Be careful or you'll lose a life if collide. Your game is over when you run out of hearts.
+Be careful or you'll lose a life if you collide with a Bystander/Obstacle. Your game is over when you run out of hearts.
 
-TODO
-I plan to add achievement awards for successfully passing levels.
+Contribute
+==========
+I'm not taking pull requests currently.
+
+Acknowledgements
+================
+In addition to the sources commented in the code, I completed this project with the help of the following tutorials:
+  (https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000)
+  (https://matthewcranford.com/arcade-game-walkthrough-part-1-starter-code-breakdown/)
+  (https://matthewcranford.com/arcade-game-walkthrough-part-2-pseudo-code/)
+  (https://matthewcranford.com/arcade-game-walkthrough-part-3-creating-a-hero/)
+  (https://matthewcranford.com/arcade-game-walkthrough-part-4-heros-first-steps/)
+  (https://matthewcranford.com/arcade-game-walkthrough-part-5-adding-enemies/)
+  (https://matthewcranford.com/arcade-game-walkthrough-part-6-collisions-win-conditions-and-game-resets/)
+
+Many thanks to Udacity Grow With Google Slack Community Tutor, @Lloan.
+
+Contact
+=======
+Connect with me on linkedIn (https://www.linkedin.com/in/christina-tovar-hamernik/) or Twitter (https://twitter.com/CTovarHamernik)
