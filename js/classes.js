@@ -63,7 +63,7 @@ class Enemy extends Entity {
      */
     constructor(x, y) {
         super();
-        this.sprite = 'images/enemy-bug.png';           // Image path
+        this.sprite = 'images/char-horn-girl.png';           // Image path
         this.x = x;                                     // x-axis position
         this.y = y * 1.15;                              // y-axis position w/ offset
         this.level = 1;                                 // Current level
@@ -128,7 +128,7 @@ class Enemy extends Entity {
 class Player extends Entity {
     constructor() {
         super();                                // Call super class constructor
-        this.sprite = 'images/char-boy.png';    // Set sprite info
+        this.sprite = 'images/char-pink-girl.png';    // Set sprite info
         this.x = 2;                             // Set x-axis placement
         this.y = 5 * 1.15;                      // Set y-axis placement
         this.moving = false;                    // Tracking movement in progress
