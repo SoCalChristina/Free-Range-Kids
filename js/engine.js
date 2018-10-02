@@ -173,12 +173,12 @@ const Engine = ((global) => {
          * for that particular row of the game level.
          */
         const rowImages = [
-            'images/grass-block.png',   // Top row is grass
-            'images/stone-block.png',   // Row 1 of 3 of stone
-            'images/stone-block.png',   // Row 2 of 3 of stone
-            'images/stone-block.png',   // Row 3 of 3 of stone
-            'images/grass-block.png',   // Row 1 of 2 of grass
-            'images/grass-block.png'    // Row 2 of 2 of grass
+            'https://github.com/SoCalChristina/arcade-game/blob/master/images/grass-block.png?raw=true',   // Top row is grass
+            'https://github.com/SoCalChristina/arcade-game/blob/master/images/stone-block.png?raw=trueg',   // Row 1 of 3 of stone
+            'https://github.com/SoCalChristina/arcade-game/blob/master/images/stone-block.png?raw=true',   // Row 2 of 3 of stone
+            'https://github.com/SoCalChristina/arcade-game/blob/master/images/stone-block.png?raw=true',   // Row 3 of 3 of stone
+            'https://github.com/SoCalChristina/arcade-game/blob/master/images/grass-block.png?raw=true',   // Row 1 of 2 of grass
+            'https://github.com/SoCalChristina/arcade-game/blob/master/images/grass-block.png?raw=true'    // Row 2 of 2 of grass
         ];
         const numRows = 6;  // # of rows for level
         const numCols = 5;  // # of cols for level
@@ -284,22 +284,12 @@ const Engine = ((global) => {
      * all of these images are properly loaded our game will start.
      */
     Resources.load([
-        'images/stone-block.png',
-        'images/water-block.png',
-        'images/grass-block.png',
-        'images/enemy-bug.png',
-        'images/sun.png',
-        'images/char-boy.png',
-        'images/char-cat-girl.png',
-        'images/char-horn-girl.png',
-        'images/char-pink-girl.png',
-        'images/char-princess-girl.png',
-        'images/gem-blue.png',
-        'images/gem-green.png',
-        'images/gem-orange.png',
-        'images/star.png',
-        'images/key.png',
-        'images/heart.png'
+        'https://github.com/SoCalChristina/arcade-game/blob/master/images/stone-block.png?raw=true',
+        'https://github.com/SoCalChristina/arcade-game/blob/master/images/grass-block.png?raw=true',
+        'https://github.com/SoCalChristina/arcade-game/blob/master/images/char-horn-girl.png?raw=true',
+        'https://github.com/SoCalChristina/arcade-game/blob/master/images/char-pink-girl.png?raw=true',
+        'https://github.com/SoCalChristina/arcade-game/blob/master/images/char-princess-girl.png?raw=true',
+        'https://github.com/SoCalChristina/arcade-game/blob/master/images/heart.png?raw=true'
 
     ]);
 
