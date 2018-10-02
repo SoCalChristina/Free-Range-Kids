@@ -6,6 +6,7 @@
  //Sources Provide by Udacity, https://github.com/udacity/frontend-nanodegree-arcade-game
 //https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000
 //https://matthewcranford.com/arcade-game-walkthrough-part-1-starter-code-breakdown/
+
 (function() {
     let resourceCache = {};
     // let loading = [];
@@ -96,4 +97,4 @@
         onReady,
         isReady
     };
-})();
+})()
