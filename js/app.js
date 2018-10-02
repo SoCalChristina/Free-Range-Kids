@@ -61,7 +61,6 @@ function setLives() {
 /* TODO create acheivement section
 function displayAchievements() {
     const awards = document.querySelectorAll('.achievement-vault img');
-
     awards.forEach((achivement) => {
         achievement.src = `./${award.sprite}`;//./before ${achievement.sprite}
     });
