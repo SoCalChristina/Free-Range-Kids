@@ -4,6 +4,8 @@ Frontend Nano Degree Arcade Game
 This a a JavaScript frogger clone game made for the Udacity Frontend Nano Degree course. 
 My inspiration for my version, **Free Range Kids**, comes from current event stories about "concerned" bystanders calling authorities to report elementary school age children playing outside without their parents. 
 
+![screen shot](https://github.com/SoCalChristina/arcade-game/blob/master/Screen-Shot.png?raw=true)
+
 Game Requirements
 =================
 The game requires a web browser.
