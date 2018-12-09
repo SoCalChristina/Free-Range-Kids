@@ -11,8 +11,8 @@ The game requires a web browser.
 Resources
 =========
 The game utilizes the following fonts:
-  (https://fonts.googleapis.com/css?family=Chicle)
-  (https://fonts.googleapis.com/css?family=Open+Sans)
+  * (https://fonts.googleapis.com/css?family=Chicle)
+  * (https://fonts.googleapis.com/css?family=Open+Sans)
   
 Rules of the Game
 =================
@@ -27,13 +27,13 @@ I'm not taking pull requests currently.
 Acknowledgements
 ================
 In addition to the sources commented in the code, I completed this project with the help of the following tutorials:
-  (https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000)
-  (https://matthewcranford.com/arcade-game-walkthrough-part-1-starter-code-breakdown/)
-  (https://matthewcranford.com/arcade-game-walkthrough-part-2-pseudo-code/)
-  (https://matthewcranford.com/arcade-game-walkthrough-part-3-creating-a-hero/)
-  (https://matthewcranford.com/arcade-game-walkthrough-part-4-heros-first-steps/)
-  (https://matthewcranford.com/arcade-game-walkthrough-part-5-adding-enemies/)
-  (https://matthewcranford.com/arcade-game-walkthrough-part-6-collisions-win-conditions-and-game-resets/)
+  * (https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000)
+  * (https://matthewcranford.com/arcade-game-walkthrough-part-1-starter-code-breakdown/)
+  * (https://matthewcranford.com/arcade-game-walkthrough-part-2-pseudo-code/)
+  * (https://matthewcranford.com/arcade-game-walkthrough-part-3-creating-a-hero/)
+  * (https://matthewcranford.com/arcade-game-walkthrough-part-4-heros-first-steps/)
+  * (https://matthewcranford.com/arcade-game-walkthrough-part-5-adding-enemies/)
+  * (https://matthewcranford.com/arcade-game-walkthrough-part-6-collisions-win-conditions-and-game-resets/)
 
 Many thanks to Udacity Grow With Google Slack Community Tutor, @Lloan.
 
