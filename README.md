@@ -1,7 +1,7 @@
 Frontend Nano Degree Arcade Game
 ===============================
 
-This a a JavaScript frogger clone game made for the Udacity Frontend Nano Degree course. 
+This a a JavaScript frogger clone game made for the Udacity Front End Web Developer Nanodegree. 
 My inspiration for my version, **Free Range Kids**, comes from current event stories about "concerned" bystanders calling authorities to report elementary school age children playing outside without their parents. 
 
 ![game screen shot](https://github.com/SoCalChristina/arcade-game/blob/master/images/Screen-Shot.png)
@@ -18,7 +18,7 @@ The game utilizes the following fonts:
   
 Rules of the Game
 =================
-Use your keyboard to cross the road. You can use your arrows to move your avatar on the screen. Help you avatar move across the path without colliding with an obstacle. Get your avatar to the other side of the path to win the level.
+Use your keyboard to cross the road. You can use your arrows to move your avatar on the screen. Help your avatar move across the path without colliding with an obstacle. Get your avatar to the other side of the path to win the level.
 
 Be careful or you'll lose a life if you collide with a Bystander/Obstacle. Your game is over when you run out of hearts.
 
