@@ -1,4 +1,4 @@
-Frontend Nano Degree Arcade Game
+Front End Developer Nanodegree Arcade Game
 ===============================
 
 This a a JavaScript frogger clone game made for the Udacity Front End Web Developer Nanodegree. 
